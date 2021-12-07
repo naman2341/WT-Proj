@@ -3,7 +3,7 @@ import { addToCart, removeFromCart } from '../actions/cartActions';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
-export const FAQ = () => {
+export const AboutUs = () => {
     return (
         <div>
         
@@ -17,8 +17,9 @@ export const FAQ = () => {
       <p/>
     <div class="ms-2 me-auto">
       <div class="fw-bold">Praneeth</div>
-   
-      <a href = "https://github.com/praneethk002"><img src = "\images\P1.png"/></a>
+      <br/>
+      <a href = "https://github.com/praneethk002"><img src = "\images\P1.png" height="200"/></a>
+      <br/><br/><br/>
     </div>
     <span class="badge bg-primary rounded-pill"></span>
   </li>
@@ -26,9 +27,9 @@ export const FAQ = () => {
   <p/>
     <div class="ms-2 me-auto">
       <div class="fw-bold">Naman</div>
-    
-      <a href = "https://github.com/naman2341"><img src = "\images\P2.png"/></a>
-        <br/><br/><br/><br/>
+      <br/>
+      <a href = "https://github.com/naman2341"><img src = "\images\P2.png" height="200"/></a>
+        <br/><br/><br/>
     </div>
     <span class="badge bg-primary rounded-pill"></span>
   </li>
@@ -36,7 +37,8 @@ export const FAQ = () => {
   <p/>
     <div class="ms-2 me-auto">
       <div class="fw-bold">Nandan</div>
-      <a href = "https://github.com/MonkeyDGod619"><img src = "\images\P3.png"/></a>
+      <br/>
+      <a href = "https://github.com/MonkeyDGod619"><img src = "\images\P3.png" height="200"/></a>
       <br/><br/><br/><br/>
     </div>
     <span class="badge bg-primary rounded-pill"></span>

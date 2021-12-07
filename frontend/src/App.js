@@ -14,7 +14,7 @@ import PlaceOrderScreen from './screens/PlaceOrderScreen';
 import OrderScreen from './screens/OrderScreen';
 import ProfileScreen from './screens/ProfileScreen';
 import OrdersScreen from './screens/OrdersScreen';
-import { FAQ } from './screens/FAQ';
+import { AboutUs } from './screens/AboutUs';
 
 function App() {
   const userSignin = useSelector((state) => state.userSignin);
@@ -64,7 +64,7 @@ function App() {
             </li>
 
             <li>
-              <Link to="/FAQ">FAQ</Link>
+              <Link to="/aboutus">About Us</Link>
             </li>
           </ul>
         </aside>
@@ -82,7 +82,7 @@ function App() {
             <Route path="/product/:id" component={ProductScreen} />
             <Route path="/cart/:id?" component={CartScreen} />
             <Route path="/category/:id" component={HomeScreen} />
-            <Route path="/faq" component={FAQ} />
+            <Route path="/aboutus" component={AboutUs} />
             <Route path="/" exact={true} component={HomeScreen} />
             
           </div>
