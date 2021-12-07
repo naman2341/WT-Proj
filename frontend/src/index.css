@@ -34,9 +34,9 @@ button {
 .header {
   text-align:center;
   grid-area: header;
-  font-family: serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-color: #22201F;
-  color: #A93226;
+  color: #e40c0c;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,7 +50,7 @@ Link{
 }
 
 .brand a {
-  color: #A93226;
+  color: #e40c0c;
   align-items: center;
   text-align-last: center;
   text-align: center;
@@ -60,7 +60,7 @@ Link{
 }
 .header-links a {
   text-align:center;
-  color: #A93226;
+  color: #e40c0c;
   text-decoration: none;
   padding: 1rem;
 }
@@ -74,7 +74,7 @@ Link{
 .footer {
   grid-area: footer;
   background-color: #22201F;
-  color: #A93226;
+  color: #e40c0c;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -168,7 +168,7 @@ a > .rating > span:last-child {
   transform: translateX(-30rem);
   width: 30rem;
   background-color: #f0f0f0;
-  opacity: 0.5;
+  opacity: 0.9;
   height: 100%;
 }
 .sidebar.open {
@@ -243,12 +243,12 @@ a > .rating > span:last-child {
   border: 0.1rem #404040 solid;
 }
 .button.primary {
-  color: #A93226;
+  color: #e40c0c;
   background-color: black; 
   /* RED to black */
 }
 .button.secondary {
-  color: #A93226;
+  color: #e40c0c;
   background-color: rgb(0, 0, 0); 
 }
 .text-center {

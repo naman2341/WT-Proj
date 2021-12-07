@@ -14,6 +14,7 @@ import PlaceOrderScreen from './screens/PlaceOrderScreen';
 import OrderScreen from './screens/OrderScreen';
 import ProfileScreen from './screens/ProfileScreen';
 import OrdersScreen from './screens/OrdersScreen';
+import { FAQ } from './screens/FAQ';
 
 function App() {
   const userSignin = useSelector((state) => state.userSignin);
@@ -34,7 +35,6 @@ function App() {
             <Link to="/">DigArt</Link>
           </div>
           <div className="header-links">
-            <a href="cart.html">Cart</a>
             {userInfo ? (
               <Link to="/profile">{userInfo.name}</Link>
             ) : (
@@ -60,11 +60,11 @@ function App() {
           </button>
           <ul className="categories">
             <li>
-              <Link to="/category/Pants">Pants</Link>
+              <Link to="/cart">Cart</Link>
             </li>
 
             <li>
-              <Link to="/category/Shirts">Shirts</Link>
+              <Link to="/FAQ">FAQ</Link>
             </li>
           </ul>
         </aside>
@@ -82,7 +82,9 @@ function App() {
             <Route path="/product/:id" component={ProductScreen} />
             <Route path="/cart/:id?" component={CartScreen} />
             <Route path="/category/:id" component={HomeScreen} />
+            <Route path="/faq" component={FAQ} />
             <Route path="/" exact={true} component={HomeScreen} />
+            
           </div>
         </main>
         <footer className="footer">Made by Team Alpha.</footer>
