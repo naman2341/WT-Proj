@@ -4,7 +4,7 @@ html {
 }
 body {
   font: 1.6rem;
-  font-family: serif;
+  font-family: sans-serif;
   height: 100vh;
   margin: 0;
 }
@@ -34,6 +34,7 @@ button {
 .header {
   text-align:center;
   grid-area: header;
+  font-family: serif;
   background-color: #22201F;
   color: #A93226;
   display: flex;
