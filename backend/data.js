@@ -5,7 +5,7 @@ export default {
       name: 'Slim Shirt',
       category: 'Shirts',
       image: '/images/d1.jpg',
-      price: 60,
+      price: 30,
       brand: ' Nike',
       rating: 4.5,
       numReviews: 10,
