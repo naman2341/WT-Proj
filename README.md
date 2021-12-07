@@ -7,7 +7,7 @@
 - Redux
 - Node & Express
 - MongoDB
-- Development: ESLint, Babel, Git, Github,
+- Development: Babel, Git, Github
 
 ## How to run
 
