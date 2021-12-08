@@ -49,7 +49,7 @@ Link{
   text-align: center;
 }
 
-.brand a {
+.artist a {
   color: #e40c0c;
   align-items: center;
   text-align-last: center;
@@ -110,7 +110,7 @@ a:hover {
   font-size: 2rem;
   font-weight: bold;
 }
-.product-brand {
+.product-artist {
   font-size: 1.2rem;
   color: #808080;
 }
@@ -154,7 +154,7 @@ a > .rating > span:last-child {
 
 /* Sidebar */
 
-.brand button {
+.artist button {
   font-size: 3rem;
   padding: 0.5rem;
   background: none;

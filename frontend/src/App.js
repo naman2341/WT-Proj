@@ -30,7 +30,7 @@ function App() {
     <BrowserRouter>
       <div className="grid-container">
         <header className="header">
-          <div className="brand">
+          <div className="artist">
             <button onClick={openMenu}>&#9776;</button>
             <Link to="/">DigArt</Link>
           </div>

@@ -15,8 +15,8 @@ function PlaceOrderScreen(props) {
   } else if (!payment.paymentMethod) {
     props.history.push("/payment");
   }
-  const itemsPrice = cartItems.reduce((a, c) => a + c.price * c.qty, 0);
-  const shippingPrice = itemsPrice > 100 ? 0 : 10;
+  const itemsPrice = cartItems.reduce((a, c) => a + c.price * 1, 0);
+  const shippingPrice = 100;
   const taxPrice = 0.15 * itemsPrice;
   const totalPrice = itemsPrice + shippingPrice + taxPrice;
 
@@ -46,7 +46,7 @@ function PlaceOrderScreen(props) {
           </h3>
           <div>
             {cart.shipping.address}, {cart.shipping.city},
-          {cart.shipping.postalCode}, {cart.shipping.country},
+          {cart.shipping.postalCode}, {cart.shipping.state},
           </div>
         </div>
         <div>
@@ -83,9 +83,6 @@ function PlaceOrderScreen(props) {
                         </Link>
 
                       </div>
-                      <div>
-                        Qty: {item.qty}
-                      </div>
                     </div>
                     <div className="cart-price">
                     ₹{item.price}
@@ -110,11 +107,11 @@ function PlaceOrderScreen(props) {
             <div>₹{itemsPrice}</div>
           </li>
           <li>
-            <div>Shipping</div>
+            <div>Copyright Fee</div>
             <div>₹{shippingPrice}</div>
           </li>
           <li>
-            <div>Tax</div>
+            <div>GST</div>
             <div>₹{taxPrice}</div>
           </li>
           <li>

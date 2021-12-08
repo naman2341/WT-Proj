@@ -9,13 +9,13 @@ function ShippingScreen(props) {
   const [address, setAddress] = useState('');
   const [city, setCity] = useState('');
   const [postalCode, setPostalCode] = useState('');
-  const [country, setCountry] = useState('');
+  const [state, setState] = useState('');
 
   const dispatch = useDispatch();
 
   const submitHandler = (e) => {
     e.preventDefault();
-    dispatch(saveShipping({ address, city, postalCode, country }));
+    dispatch(saveShipping({ address, city, postalCode, state }));
     props.history.push('payment');
   }
   return <div>
@@ -24,7 +24,7 @@ function ShippingScreen(props) {
       <form onSubmit={submitHandler} >
         <ul className="form-container">
           <li>
-            <h2>Shipping</h2>
+            <h2>Personal Information</h2>
           </li>
 
           <li>
@@ -49,13 +49,12 @@ function ShippingScreen(props) {
             </input>
           </li>
           <li>
-            <label htmlFor="country">
-              Country
+            <label htmlFor="state">
+              State
           </label>
-            <input type="text" name="country" id="country" onChange={(e) => setCountry(e.target.value)}>
+            <input type="text" name="state" id="state" onChange={(e) => setState(e.target.value)}>
             </input>
           </li>
-
 
           <li>
             <button type="submit" className="button primary">Continue</button>

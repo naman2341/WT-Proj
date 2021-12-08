@@ -52,14 +52,6 @@ router.put("/:id/pay", isAuth, async (req, res) => {
   if (order) {
     order.isPaid = true;
     order.paidAt = Date.now();
-    order.payment = {
-      paymentMethod: 'paypal',
-      paymentResult: {
-        payerID: req.body.payerID,
-        orderID: req.body.orderID,
-        paymentID: req.body.paymentID
-      }
-    }
     const updatedOrder = await order.save();
     res.send({ message: 'Order Paid.', order: updatedOrder });
   } else {

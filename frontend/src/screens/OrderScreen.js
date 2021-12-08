@@ -36,7 +36,7 @@ function OrderScreen(props) {
           </h3>
             <div>
               {order.shipping.address}, {order.shipping.city},
-          {order.shipping.postalCode}, {order.shipping.country},
+          {order.shipping.postalCode}, {order.shipping.state},
           </div>
             <div>
               {order.isDelivered ? "Delivered at " + order.deliveredAt : "Not Delivered."}
@@ -79,9 +79,6 @@ function OrderScreen(props) {
                           </Link>
 
                         </div>
-                        <div>
-                          Qty: {item.qty}
-                        </div>
                       </div>
                       <div className="cart-price">
                       ₹{item.price}
@@ -111,11 +108,11 @@ function OrderScreen(props) {
               <div>₹{order.itemsPrice}</div>
             </li>
             <li>
-              <div>Shipping</div>
+              <div>Copyright Fee</div>
               <div>₹{order.shippingPrice}</div>
             </li>
             <li>
-              <div>Tax</div>
+              <div>GST</div>
               <div>₹{order.taxPrice}</div>
             </li>
             <li>

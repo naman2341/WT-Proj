@@ -13,9 +13,8 @@ function ProductsScreen(props) {
   const [name, setName] = useState('');
   const [price, setPrice] = useState('');
   const [image, setImage] = useState('');
-  const [brand, setBrand] = useState('');
+  const [artist, setArtist] = useState('');
   const [category, setCategory] = useState('');
-  const [countInStock, setCountInStock] = useState('');
   const [description, setDescription] = useState('');
   const [uploading, setUploading] = useState(false);
   const productList = useSelector((state) => state.productList);
@@ -53,9 +52,8 @@ function ProductsScreen(props) {
     setPrice(product.price);
     setDescription(product.description);
     setImage(product.image);
-    setBrand(product.brand);
+    setArtist(product.artist);
     setCategory(product.category);
-    setCountInStock(product.countInStock);
   };
   const submitHandler = (e) => {
     e.preventDefault();
@@ -65,9 +63,8 @@ function ProductsScreen(props) {
         name,
         price,
         image,
-        brand,
+        artist,
         category,
-        countInStock,
         description,
       })
     );
@@ -148,23 +145,13 @@ function ProductsScreen(props) {
                 {uploading && <div>Uploading...</div>}
               </li>
               <li>
-                <label htmlFor="brand">Brand</label>
+                <label htmlFor="artist">Artist</label>
                 <input
                   type="text"
-                  name="brand"
-                  value={brand}
-                  id="brand"
-                  onChange={(e) => setBrand(e.target.value)}
-                ></input>
-              </li>
-              <li>
-                <label htmlFor="countInStock">CountInStock</label>
-                <input
-                  type="text"
-                  name="countInStock"
-                  value={countInStock}
-                  id="countInStock"
-                  onChange={(e) => setCountInStock(e.target.value)}
+                  name="artist"
+                  value={artist}
+                  id="artist"
+                  onChange={(e) => setArtist(e.target.value)}
                 ></input>
               </li>
               <li>
@@ -213,7 +200,7 @@ function ProductsScreen(props) {
               <th>Name</th>
               <th>Price</th>
               <th>Category</th>
-              <th>Brand</th>
+              <th>Artist</th>
               <th>Action</th>
             </tr>
           </thead>
@@ -224,7 +211,7 @@ function ProductsScreen(props) {
                 <td>{product.name}</td>
                 <td>{product.price}</td>
                 <td>{product.category}</td>
-                <td>{product.brand}</td>
+                <td>{product.artist}</td>
                 <td>
                   <button className="button" onClick={() => openModal(product)}>
                     Edit

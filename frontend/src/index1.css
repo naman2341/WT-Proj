@@ -35,7 +35,7 @@ button {
   align-items: center;
   padding: 0.5rem;
 }
-.brand a {
+.artist a {
   color: #ffffff;
   font-size: 3rem;
   font-weight: bold;
@@ -91,7 +91,7 @@ a:hover {
   font-size: 2rem;
   font-weight: bold;
 }
-.product-brand {
+.product-artist {
   font-size: 1.2rem;
   color: #808080;
 }
@@ -135,7 +135,7 @@ a > .rating > span:last-child {
 
 /* Sidebar */
 
-.brand button {
+.artist button {
   font-size: 3rem;
   padding: 0.5rem;
   background: none;

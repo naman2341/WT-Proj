@@ -71,7 +71,7 @@ function HomeScreen(props) {
                 <div className="product-name">
                   <Link to={'/product/' + product._id}>{product.name}</Link>
                 </div>
-                <div className="product-brand">{product.brand}</div>
+                <div className="product-artist">{product.artist}</div>
                 <div className="product-price">₹{product.price}</div>
                 <div className="product-rating">
                   <Rating
