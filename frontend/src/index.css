@@ -372,8 +372,8 @@ tbody > tr:nth-child(odd) {
   padding-top: 1rem;
 }
 .checkout-steps > div.active {
-  border-top: 0.3rem #f08000 solid;
-  color: #f08000;
+  border-top: 0.3rem #e40c0c solid;
+  color: #e40c0c;
 }
 
 /* Place Order */
