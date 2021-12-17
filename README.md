@@ -1,9 +1,9 @@
 # WT Proj
 
 ## Developers
-- <a href="https://github.com/naman2341">Naman Choudhary</a>
-- <a href="https://github.com/praneethk002">Praneeth Kumar</a>
-- <a href="https://github.com/MonkeyDGod619">Nandan H</a>
+- <a href="https://github.com/naman2341" target="_blank">Naman Choudhary</a>
+- <a href="https://github.com/praneethk002" target="_blank">Praneeth Kumar</a>
+- <a href="https://github.com/MonkeyDGod619" target="_blank">Nandan H</a>
 
 ## Powered by
 
