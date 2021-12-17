@@ -1,5 +1,10 @@
 # WT Proj
 
+## Developers
+- Naman Choudhary
+- Praneeth Kumar
+- Nandan H
+
 ## Powered by
 
 - HTML5 and CSS3
